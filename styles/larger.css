@@ -26,4 +26,16 @@
     h2 {
         margin: 0;
     }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .course-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 4 columns with equal width */
+        gap: 10px; /* Space between grid items */
+    }
 }

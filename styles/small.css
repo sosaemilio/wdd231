@@ -84,6 +84,8 @@ section .course-button {
     padding: 5px 10px;
     margin: 5px;
     border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .course-list p {
@@ -91,6 +93,7 @@ section .course-button {
     color: #FFFFFF;
     padding: 5px 10px;
     margin: 5px;
+    text-align: center;
 }
 
 .course-menu {
