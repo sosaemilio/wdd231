@@ -95,6 +95,13 @@ courses.forEach(course => {
     courseList.appendChild(courseItem);
 });
 
+// Calculate total credits using reduce and display them in total-credits span
+const totalCredits = courses.reduce((total, course) => total + course.credits, 0);
+document.getElementById("total-credits").textContent = totalCredits;
+
+
+
+// Add event listeners to the buttons
 allButton.addEventListener("click", (e) => {
     courseList.innerHTML = '';
     courses.forEach(course => {
@@ -102,6 +109,7 @@ allButton.addEventListener("click", (e) => {
         courseItem.textContent = `${course.subject} ${course.number}`;
         courseList.appendChild(courseItem);
     });
+    
 });
 
 wddButton.addEventListener("click", (e) => {
@@ -125,4 +133,6 @@ cseButton.addEventListener("click", (e) => {
         }
     });
 });
+
+
 
