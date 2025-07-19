@@ -109,7 +109,8 @@ allButton.addEventListener("click", (e) => {
         courseItem.textContent = `${course.subject} ${course.number}`;
         courseList.appendChild(courseItem);
     });
-    
+    // change total credits display
+    document.getElementById("total-credits").textContent = totalCredits;
 });
 
 wddButton.addEventListener("click", (e) => {
@@ -121,6 +122,9 @@ wddButton.addEventListener("click", (e) => {
             courseList.appendChild(courseItem);
         }
     });
+    // change total credits display
+    const wddCredits = courses.filter(course => course.subject === 'WDD').reduce((total, course) => total + course.credits, 0);
+    document.getElementById("total-credits").textContent = wddCredits;
 });
 
 cseButton.addEventListener("click", (e) => {
@@ -132,6 +136,9 @@ cseButton.addEventListener("click", (e) => {
             courseList.appendChild(courseItem);
         }
     });
+    // change total credits display
+    const cseCredits = courses.filter(course => course.subject === 'CSE').reduce((total, course) => total + course.credits, 0);
+    document.getElementById("total-credits").textContent = cseCredits;
 });
 
 
