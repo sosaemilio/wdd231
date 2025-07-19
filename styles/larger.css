@@ -1,24 +1,29 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 420px) {
     #menu-icon {
         display: none;
     }
 
-    header {
-        justify-content: space-between;
-    }
-
-    nav {
-        display: block;
-    }
-
     .menu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        display: block;
+        background-color: #173c64;
+        padding: 12px;
     }
-    .menu a {
-        margin: 0 10px;
-        color: #ffffff;
-        text-decoration: none;
+
+    nav a {
+        background-color: transparent;
+    }
+
+    #homepage-internal-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+        gap: 30px; /* Optional gap between items */
+    }
+
+    section:nth-child(3) {
+        grid-column: 1 / span 2;
+    }
+
+    h2 {
+        margin: 0;
     }
 }

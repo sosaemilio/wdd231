@@ -3,6 +3,7 @@ body {
     margin: 0px;
     font-size: 18px;
     max-width: 1200px;
+    margin: auto;
 }
 
 header {
@@ -53,9 +54,10 @@ h2 {
     color: #FFFFFF;
     text-align: center;
     padding: 8px;
+    margin-bottom: 4px;
 }
 
-section {
+section:nth-child(-n + 2) {
     background-color: rgb(205, 198, 198); 
 }
 
@@ -75,3 +77,23 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+section .course-button {
+    background-color: #173c64;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.course-list p {
+    background-color: darkmagenta;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.course-menu {
+    display: flex;
+    justify-content: center;
+}   
