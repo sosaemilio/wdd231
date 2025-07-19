@@ -7,27 +7,37 @@
     <meta name="author" content="Emilio Sosa">
     <meta name="description" content="Emilio Sosa's Homepage for WDD231">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
+        <img src="images/logo.png" alt="" class="logo">
         <span>Emilio Sosa</span>
         <img src="images/menu.svg" alt="menu icon" id="menu-icon">
     </header>
-    <nav>
-        
-
+    <nav class="menu">
+        <a href="/" class="menu-item">Home</a>
+        <a href="" class="menu-item">Chamber Project</a>
+        <a href="" class="menu-item">Final Project</a>
     </nav>
     <main>
         <h1>Home</h1>
         <div id="homepage-internal-body">
             <section>
                 <h2>About Me</h2>
+                <p>My name is Emilio Sosa, and I am a student at Brigham Young University - Idaho. I am currently enrolled in the Web Design and Development program.</p>
+                <p>I have a passion for web development and design, and I am excited to learn more about creating dynamic and user-friendly websites. In my free time, I enjoy exploring new technologies, working on personal projects, and contributing to open-source communities.</p>
+                <p>Feel free to connect with me on social media or check out my projects on GitHub!</p>
             </section>
             <section>
                 <h2>Student Photo</h2>
+                <img src="images/student-photo.jpg" alt="Emilio Sosa" class="student-photo">
             </section>
             <section>
                 <h2>Web Certificate Course</h2>
@@ -36,7 +46,11 @@
     </main>
 
     <footer>
-        <div class="social-media"></div>
+        <div class="social-media">
+            <a href="https://github.com/sosaemilio"><img src="images/github.png" alt="Github" class="logo"></a>
+            <a href="https://www.linkedin.com/in/emilioernestososa/"><img src="images/linkedin.png" alt="LinkedIn" class="logo"></a>
+            <a href="https://www.instagram.com/emilioesosa/"><img src="images/instagram.png" alt="Instagram" class="logo"></a>
+        </div>
         <div>
             <p id="copyright"> &#169; Emilio Sosa</p>
             <p id="lastModified" class="highlight"> Last Modified: </p>
