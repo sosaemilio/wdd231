@@ -20,6 +20,12 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: #232323;
+    color: white;
+    padding: 15px;
+}
+
+footer>div {
+    width: 300px;
 }
 
 .logo {
