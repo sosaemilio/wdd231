@@ -1,0 +1,58 @@
+[
+    {
+        "companyName": "Ciao e Pasta",
+        "address": "Diego Baustita Urbaneja Av, El Parque Street",
+        "telephone": "+58 424 8805437",
+        "website": "https://www.instagram.com/ciaoepasta/?hl=en",
+        "membership": "Bronze Membership"
+    },
+    {
+        "companyName": "Bodeguilla",
+        "address": "Diego Baustita Urbaneja Av, Tajali Av",
+        "telephone": "+58 281-2818963",
+        "website": "https://www.labodeguillabodegon.com/",
+        "membership": "Silver Membership"
+    },
+    {
+        "companyName": "Avior",
+        "address": "Avior Center, Main Street",
+        "telephone": "0501-2846700",
+        "website": "https://aviorair.com/en",
+        "membership": "Gold Membership"
+    },
+    {
+        "companyName": "Repsol",
+        "address": "Respol Tower, Main Street",
+        "telephone": "+58 281 500.4700",
+        "website": "http://www.repsol.com/",
+        "membership": "Gold Membership"
+    },
+    {
+        "companyName": "Doctors Without Borders",
+        "address": "Piritu Av, 90 N Street",
+        "telephone": "+58 424 8532970",
+        "website": "https://www.msf.es/conocenos/proyectos/venezuela",
+        "membership": "Non Profit Membership"
+    },
+    {
+        "companyName": "Super Pets",
+        "address": "Principal Av, Anzoategui Av",
+        "telephone": "+58 281 2820384",
+        "website": "https://www.instagram.com/superpetsve/?hl=en",
+        "membership": "Bronze Membership"
+    },
+    {
+        "companyName": "Casa Dana",
+        "address": "El Limon Street, Main Lecheria AV",
+        "telephone": "+58 281 2812538",
+        "website": "http://www.casadanavenezuela.com/",
+        "membership": "Bronze Membership"
+    },
+    {
+        "companyName": "Mas x Menos",
+        "address": "Lecheria Main Street",
+        "telephone": "+58 412 0276757",
+        "website": "https://www.masxmenosve.com/",
+        "membership": "Gold Membership"
+    }
+]
