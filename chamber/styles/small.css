@@ -11,3 +11,24 @@ body {
 p {
     margin: 0;
 }
+
+nav {
+    background-color: #e40c2f;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #232323;
+}
+
+.logo {
+    width: 42px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+}
