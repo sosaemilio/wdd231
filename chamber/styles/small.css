@@ -39,14 +39,6 @@ p {
     margin: 0;
 }
 
-
-/*Nav bar*/
-nav {
-    background-color: #e40c2f;
-    display: flex;
-    justify-content: space-between;
-}
-
 /* Nav Bar */
 
 .nav-bar {
@@ -122,6 +114,9 @@ footer {
     background-color: #232323;
     color: white;
     padding: 15px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
 }
 
 footer>div {
@@ -140,7 +135,12 @@ footer>div {
 }
 
 .navbar-logo {
-    width: 200px;
+    width: 42px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
 }
 
 
