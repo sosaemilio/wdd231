@@ -39,7 +39,6 @@ function displayDirectory(directoryJSON) {
 
 getCompanies(directoryUrl);
 
-
 const gridButton = document.getElementById("grid-view");
 const listButton = document.getElementById("list-view");
 const directory = document.getElementById("directory");
