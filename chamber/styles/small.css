@@ -10,16 +10,18 @@ body {
 
 a {
     color: white;
-}
-
-
-h1 {
-    text-align: center;
+    text-decoration: none;
 }
 
 h2 {
     text-align: center;
     font-size: 2em;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 h3 {
@@ -236,4 +238,63 @@ Directory Page
     background-color: white;
     border: none;
     color: #e40c2f;
+}
+
+/*Hero Image */
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    background-color: #e40c2f;
+    width: 300px;
+}
+
+.homepage-spotlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7d7b7b;
+    margin: 14px;
+}
+
+.homepage-spotlight h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    background-color: #e40c2f;
+    width: 100%;
+}
+
+.spotlight-content {
+    text-align: left;
+    width: 100%;
+}
+
+
+/* Weather Cards  */
+.weather-icon {
+    width: 50px;
+    margin: 20px;
+} 
+
+.weather-info {
+    flex-grow: 2;
+}
+
+#weather {
+    display: flex;
+    justify-content: center;
 }
