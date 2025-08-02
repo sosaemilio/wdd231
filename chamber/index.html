@@ -50,7 +50,14 @@
     <main>
         <!-- Scalable Hero Responsive image with a button on top of it -->
         <div class="hero">
-            <img src="images/hero.jpg" alt="Leon Chamber of Commerce Hero Image" class="hero-image">
+            <picture>
+                <!-- Desktop version -->
+                <source srcset="images/wide-hero.jpg" media="(min-width: 768px)">
+                
+                <!-- Mobile version (default fallback) -->
+                <img src="images/hero.jpg" alt="Leon Chamber of Commerce Hero Image" class="hero-image"/>
+            </picture>
+
             <div class="hero-text">
                 <p>Keynotes Tickets</p>
             </div>

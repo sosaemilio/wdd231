@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    color: #000000;
+    color: white;
     text-decoration: none;
 }
 
@@ -46,8 +46,9 @@ p {
 /* Nav Bar */
 
 .nav-bar {
-    background-color: #e40c2f;
-    color: #000000;
+    background-color: #8B0000
+;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,7 +62,8 @@ p {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #e40c2f;
+    background-color: #8B0000
+;
     height: 100%;
     overflow-x: hidden;
     transition: 0.5s;
@@ -78,7 +80,7 @@ p {
 }
 
 .nav-menu a {
-    color: #000000;
+    color: white;
     transition: 0.3s;
 }
 
@@ -93,7 +95,7 @@ p {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #000000;
+    background-color: white;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -116,7 +118,7 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: #232323;
-    color: #000000;
+    color: #ffffff;
     padding: 15px;
     flex-direction: column;
     gap: 20px;
@@ -182,7 +184,7 @@ Directory Page
     margin-top: 0;
     margin-left: .5rem;
     font-size: 1.5rem;
-    color: #000000;
+    color: white;
     text-align: left;
 }
 
@@ -203,12 +205,12 @@ Directory Page
 .grid section h2 {
     margin: 0;
     font-size: 1.5rem;
-    color: #000000;
+    color: white;
 }
 
 #directory section {
-    background-color: #e40c2f;
-    color: #000000;
+    background-color: #8B0000;
+    color: white;
 }
 
 #directory section p {
@@ -217,7 +219,7 @@ Directory Page
 
 #directory section a {
     display: block;
-    color: #000000;
+    color: white;
 }
 
 #directory-title {
@@ -230,16 +232,18 @@ Directory Page
 }
 
 .sortby button {
-    background-color: #e40c2f;
-    color: #000000;
+    background-color: #8B0000
+;
+    color: white;
     padding: 1rem;
 }
 
 .sortby button:hover {
     text-decoration: underline;
-    background-color: #000000;
+    background-color: white;
     border: none;
-    color: #e40c2f;
+    color: #8B0000
+;
 }
 
 /*Hero Image */
@@ -253,14 +257,15 @@ Directory Page
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000000;
+    color: white;
     text-align: center;
 }
 
 .hero-text p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
-    background-color: #e40c2f;
+    background-color: #8B0000
+;
     width: 300px;
 }
 
@@ -276,9 +281,10 @@ Directory Page
 
 .homepage-spotlight h2 {
     font-size: 1.5rem;
-    color: #000000;
+    color: white;
     margin-bottom: 0.5rem;
-    background-color: #e40c2f;
+    background-color: #8B0000
+;
     width: 100%;
 }
 
@@ -307,8 +313,9 @@ Directory Page
 .business-card {
     display: flex;
     flex-direction: column;
-    background-color: #e40c2f;
-    color: #000000;
+    background-color: #8B0000
+;
+    color: white;
     padding: 1rem;
     margin: 1rem;
     border-radius: 8px;
