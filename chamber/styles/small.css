@@ -256,7 +256,7 @@ Directory Page
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -490%);
     color: white;
     text-align: center;
 }
