@@ -10,13 +10,14 @@ async function getMembers(url) {
     let response = await fetch(url);
     if (response.ok) {
         let data = await response.json();
-        displayMembers(data);
+        membersJSON = data;
     } else {
         console.error("Failed to fetch member data");
     }
 }
 function displayMembers(membersJSON) {
-    membersJSON.forEach((member) => {
+    for (let i = 0; i < 3; i++) {
+        const member = membersJSON[i];
         const sectionHTML = `<section class="business-card">
                 <h3>${member.companyName}</h3>
                 <h4>${member.tagline}</h4>
@@ -30,7 +31,15 @@ function displayMembers(membersJSON) {
                 </div>
             </section>`;
         document.querySelector(".members-spotlight").insertAdjacentHTML("beforeend", sectionHTML);
-    });
+    }
 }
 
-getMembers(directoryUrl);
+/* Function to only select gold or silver members */
+function filterMembers(members) {
+    return members.filter(member => member.membership === "Gold Membership" || member.membership === "Silver Membership");
+}
+getMembers(directoryUrl).then(() => {
+    const filteredMembers = filterMembers(membersJSON);
+    displayMembers(filteredMembers);
+});
+
