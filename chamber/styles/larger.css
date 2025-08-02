@@ -68,4 +68,18 @@
         flex-direction: row;
     }
 
+    /*** Homepage ***/
+    .homepage-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .members-spotlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
 }
