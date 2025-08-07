@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon - Chamber of Commerce </title>
+    <meta name="author" content="Emilio Sosa">
+    <meta name="description" content="Website dedicated to Leon, Spain Chamber of Commerce">
+    <meta property="og:title" content="Leon Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sosaemilio.github.io/wdd231/images/image.png">
+    <meta property="og:url" content="https://sosaemilio.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="nav-bar">
+        <a href="index.html">
+            <div id="logo-container">
+                <img src="images/favicon.ico" alt="" class="navbar-logo">
+                <span>Leon Chamber of Commerce</span>
+            </div>
+        </a>
+
+        <div id="menu" class="menu" onclick="menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <div id="join-page">
+        <main id="join-form-body">
+            <h1>Membership Application Form</h1>
+            <form action="thankyou.html" method="get" id="joinus-form">
+                <label for="first-name">
+                    First Name*
+                </label>
+                <input type="text" name="first_name" id="first-name" autocomplete="given-name" required autofocus>
+
+                <label for="last-name">
+                    Last Name*
+                </label>
+                <input type="text" name="last_name" id="last-name" autocomplete="family-name" required>
+                
+                
+                <label for="title">
+                    Title*
+                </label>
+                <input type="text" name="title" id="title" pattern="[a-zA-Z- ]{7,}" title="It must be at least 7 alpha characters, only the symbol is allowed">
+                
+
+                <label for="email">
+                    email*
+                </label>
+                <input type="email" name="email" id="email" placeholder="johndoe@example.com" autocomplete="email" required>
+                
+
+                <label for="telephone">
+                    Cell phone number*
+                </label>
+                <input type="tel" name="telephone" id="telephone" autocomplete="tel" required> 
+                
+                <label for="business-name">
+                    Business Name*
+                </label>
+                <input type="text" name="business_name" id="business-name" autocomplete="organization" required>
+
+                <label for="membership">
+                    Membership
+                </label>
+                <select name="membership" id="membership">
+                    <option value="">Select your Membership</option>
+                    <option value="bronze_membership">Bronze Membership</option>
+                    <option value="silver_membership">Silver Membership</option>
+                    <option value="gold_membership">Gold Membership</option>
+                    <option value="np_membership">NP Membership</option>
+                </select>
+
+                <label for="date" id="date-label"> Submited Date
+                    <input type="datetime-local" id="date" name="submited-date" hidden>
+                </label>
+
+
+                <label for="description">Business description</label>
+                <textarea name="name" id="description" cols="30" rows="10"></textarea>
+                
+                <input type="submit" value="Send message" id="submit">
+            </form>
+        </main>
+
+        <!--Membership List-->
+        <aside id="membership-sidebar">
+            <h2>Membership Levels</h2>
+            <div class="membership">
+                <h3 >Non Profit Membership</h3>
+                <div>Learn More</div>
+            </div>
+            <div class="membership">
+                <h3 >Bronze Membership</h3>
+                <div>Learn More</div>
+            </div>
+            <div class="membership">
+                <h3 >Silver Membership</h3>
+                <div>Learn More</div>
+            </div>
+            <div class="membership">
+                <h3 >Gold Membership</h3>
+                <div>Learn More</div>
+            </div>
+            
+        </aside>
+    </div>
+
+    <footer>
+        <div>
+            <p><b>Leon Chamber of Commerce</b></p>
+            <p>Av del Padre Isla, 30</p>
+            <p>León, 24002, Spain</p>
+            <p>leon@camaraleon.com</p>
+            <p><a href="tel:+34987224400"></a>987 224 400</p>
+        </div>
+        <div class="social-media">
+            <a href="https://x.com/"><img src="images/x.png" alt="x logo" class="logo"></a>
+            <a href="https://www.linkedin.com/in/"><img src="images/linkedin.png" alt="LinkedIn" class="logo"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube" class="logo"></a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Emilio Sosa</p>
+            <p id="copyright"> &#169; Emilio Sosa</p>
+            <p id="lastModified" class="highlight"> Last Modified: </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

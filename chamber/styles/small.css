@@ -332,3 +332,28 @@ Directory Page
 .business-information {
     display: flex;
 }
+
+/*Join Us*/
+#join-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#join-form-body {
+    background-color: #8B0000;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+#join-form-body h1 {
+    margin: 0;
+}
+
+#joinus-form {
+    display: flex;
+    flex-direction: column;
+}

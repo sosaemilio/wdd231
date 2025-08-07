@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon - Chamber of Commerce </title>
+    <meta name="author" content="Emilio Sosa">
+    <meta name="description" content="Website dedicated to Leon, Spain Chamber of Commerce">
+    <meta property="og:title" content="Leon Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sosaemilio.github.io/wdd231/images/image.png">
+    <meta property="og:url" content="https://sosaemilio.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="nav-bar">
+        <a href="index.html">
+            <div id="logo-container">
+                <img src="images/favicon.ico" alt="" class="navbar-logo">
+                <span>Leon Chamber of Commerce</span>
+            </div>
+        </a>
+
+        <div id="menu" class="menu" onclick="menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main id="thankyou">
+        <h2>Thanks for your message!</h2>
+        <p>You are one step closer to be part of the Chamber. <strong>We will contact you soon!</strong></p>
+    </main>
+
+    <footer>
+        <div>
+            <p><b>Leon Chamber of Commerce</b></p>
+            <p>Av del Padre Isla, 30</p>
+            <p>León, 24002, Spain</p>
+            <p>leon@camaraleon.com</p>
+            <p><a href="tel:+34987224400"></a>987 224 400</p>
+        </div>
+        <div class="social-media">
+            <a href="https://x.com/"><img src="images/x.png" alt="x logo" class="logo"></a>
+            <a href="https://www.linkedin.com/in/"><img src="images/linkedin.png" alt="LinkedIn" class="logo"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube" class="logo"></a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Emilio Sosa</p>
+            <p id="copyright"> &#169; Emilio Sosa</p>
+            <p id="lastModified" class="highlight"> Last Modified: </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
