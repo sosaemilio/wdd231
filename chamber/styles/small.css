@@ -383,6 +383,10 @@ Directory Page
     margin: 2rem auto;
 }
 
+#submit {
+    margin:  10px 0;
+}
+
 /* Form/Fields Styles */
 
 label {
@@ -416,11 +420,19 @@ dialog {
   background-color: rgb(0 0 0 / 50%);
 }
 
-/* Include animations to the membership cards */
+/*Make the .membership cards appears from right to left using animation*/
+
 .membership {
-    animation: fadeColor 2s ease-in-out infinite alternate;
+    animation: slideIn 0.5s forwards;
 }
 
-#submit {
-    margin:  10px 0;
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

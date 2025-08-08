@@ -66,7 +66,7 @@
                 <label for="title">
                     Title*
                 </label>
-                <input type="text" name="title" id="title" pattern="[a-zA-Z- ]{7,}" title="It must be at least 7 alpha characters, only the symbol is allowed">
+                <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[a-zA-Z- ]{7,}" title="It must be at least 7 alpha characters, only the symbol is allowed">
                 
 
                 <label for="email">
@@ -112,21 +112,21 @@
             <h2>Membership Levels</h2>
             <div class="membership">
                 <h3 >Non Profit Membership</h3>
-                <div>Learn More</div>
+                <div class="nonprofit-button">Learn More</div>
             </div>
             <div class="membership">
                 <h3 >Bronze Membership</h3>
-                <div>Learn More</div>
+                <div class="bronze-button">Learn More</div>
             </div>
             <div class="membership">
                 <h3 >Silver Membership</h3>
-                <div>Learn More</div>
+                <div class="silver-button">Learn More</div>
             </div>
             <div class="membership">
                 <h3 >Gold Membership</h3>
-                <div>Learn More</div>
+                <div class="gold-button">Learn More</div>
             </div>
-            <dialog class="membership-benefits-box">
+            <dialog id="membership-benefits-box">
                 <button id="closeModal">Close</button>
             </dialog>   
         </aside>
