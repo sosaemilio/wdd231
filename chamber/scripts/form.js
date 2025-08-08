@@ -21,5 +21,5 @@ nonprofitButton.addEventListener('click', () => {
 
 // Usually you will want to wait for a user action to show the modal dialog
 closeModal.addEventListener('click', () => {
-modal.close();
+    modal.close();
 });
