@@ -484,3 +484,24 @@ dialog {
     text-align: left;
     margin: 0.5rem 0;
 }
+
+.discover-card h2 {
+    grid-area: title;
+}
+
+.discover-card figure {
+    grid-area: image;
+}
+
+.discover-card address {
+    grid-area: address;
+}
+
+.discover-card p {
+    grid-area: description;
+}
+
+.discover-card button {
+    grid-area: button;
+    margin-top: 1rem;
+}
