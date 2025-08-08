@@ -23,6 +23,7 @@
         rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -96,12 +97,11 @@
                 </select>
 
                 <label for="date" id="date-label"> Submited Date
-                    <input type="datetime-local" id="date" name="submited-date" hidden>
+                    <input type="datetime-local" id="date" name="submitted_date" hidden>
                 </label>
 
-
                 <label for="description">Business description</label>
-                <textarea name="name" id="description" cols="30" rows="10"></textarea>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
                 
                 <input type="submit" value="Send message" id="submit">
             </form>
