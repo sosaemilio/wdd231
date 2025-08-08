@@ -14,12 +14,64 @@ const closeModal = document.getElementById('closeModal');
 nonprofitButton.addEventListener('click', () => {
   modal.innerHTML = `
     <h2>Non Profit Membership Benefits</h2>
+    <p>No Fee</p>
+    <p>Only available for non profits organization in the metropolitan area</p>
     <button id="closeModal">Close</button>
   `;
   modal.showModal(); // display the modal dialog right away.
 });
 
-// Usually you will want to wait for a user action to show the modal dialog
+bronzeButton.addEventListener('click', () => {
+  modal.innerHTML = `
+    <h2>Bronze Membership Benefits</h2>
+    <p>$30 / Month</p>
+    <p>A good startpoint for small business and companies looking to see the perks of the chamber, our offer: </p>
+    <ul>
+        <li>Events Discounts</li>
+        <li>Access to all the special Events</li>
+    </ul>
+    <button id="closeModal">Close</button>
+  `;
+  modal.showModal(); // display the modal dialog right away.
+});
+
+silverButton.addEventListener('click', () => {
+  modal.innerHTML = `
+    <h2>Silver Membership Benefits</h2>
+    <p>$40 / Month </p>
+    <p>The best choice for almost all business looking to expand and be part of the dynamic ecomony of the city.</p>
+    <ul>
+        <li>All Bronze Benefits</li>
+        <li>Oficial Listing on the Website</li>
+        <li>Advertising</li>
+        <li>Include the business logo into the banner and fliers of the Chamber</li>
+        <li>Spotlight Position</li>
+    </ul>
+    <button id="closeModal">Close</button>`;
+        modal.showModal(); // display the modal dialog right away.
+    });
+
+goldButton.addEventListener('click', () => {
+  modal.innerHTML = `
+    <h2>Gold Membership Benefits</h2>
+    <p>$60 / Month</p>
+    <p>For those looking to become partner and meeting the best of the industry</p>
+    <ul>
+        <li>All Bronze & Silver Benefits</li>
+        <li>VIP Passes to all the events</li>
+        <li>Chamber Partner</li>
+        <li>Inhouse and Online Training</li>
+        <li>Discount in POS and accounting Softwares</li>
+        <li>Business Consulting</li>
+    </ul>
+    <button id="closeModal">Close</button>
+
+`;
+    modal.showModal(); // display the modal dialog right away.
+});
+
+// Close the modal dialog when the close button is clicked
+// This is just an example of how to close the modal dialog
 closeModal.addEventListener('click', () => {
     modal.close();
 });
