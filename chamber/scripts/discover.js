@@ -1,24 +1,39 @@
 const discoverGalleryBody = document.getElementById('discover-gallery');
+const discoverUrl = "https://sosaemilio.github.io/wdd231/chamber/data/places.json";
 
-// Function to create a gallery item
-function createGalleryItem(imageSrc, title, description) {
-    const card = document.createElement('div');
-    card.classList.add('discover-card');
+let placesJson = [];
 
-    const img = document.createElement('img');
-    img.src = imageSrc;
-    img.alt = title;
-
-    const h2 = document.createElement('h2');
-    h2.textContent = title;
-
-    const p = document.createElement('p');
-    p.textContent = description;
-
-    card.appendChild(img);
-    card.appendChild(h2);
-    card.appendChild(p);
-
-    return card;
+async function getMembers(url) {
+    let response = await fetch(url);
+    if (response.ok) {
+        let data = await response.json();
+        placesJson = data;
+    } else {
+        console.error("Failed to fetch member data");
+    }
 }
-// Function to load gallery items
+
+function displayPlaces(placesJson) {
+    placesJson.forEach(place => {
+        const sectionHTML = `<section class="discover-card">
+                <h2>${place.name}</h2>
+                <figure>
+                    <img src="${place.photo}" alt="${place.name}">
+                </figure>
+
+                <address>
+                    ${place.address}
+                </address>
+
+                <p>${place.description}</p>
+
+                <button>Learn More</button>
+            </section>`;
+        document.querySelector("#discover-gallery").insertAdjacentHTML("beforeend", sectionHTML);
+    });
+    
+}
+
+getMembers(discoverUrl).then(() => {
+    displayPlaces(placesJson);
+});
