@@ -415,3 +415,12 @@ dialog {
 ::backdrop {
   background-color: rgb(0 0 0 / 50%);
 }
+
+/* Include animations to the membership cards */
+.membership {
+    animation: fadeColor 2s ease-in-out infinite alternate;
+}
+
+#submit {
+    margin:  10px 0;
+}
