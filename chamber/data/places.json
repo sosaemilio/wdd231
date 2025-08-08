@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Catedral de León",
+    "address": "Plaza de Regla, s/n, 24003 León, Spain",
+    "description": "Also known as the 'House of Light,' this magnificent Gothic cathedral is one of Spain's most important landmarks. It's renowned for its stunning stained-glass windows, which cover over 1,800 square meters and create a breathtaking display of light and color.",
+    "photo": "images/catedral-leon.webp"
+  },
+  {
+    "name": "Casa Botines",
+    "address": "Plaza de San Marcelo, 5, 24003 León, Spain",
+    "description": "A modernist masterpiece by the famous architect Antoni Gaudí, Casa Botines is one of only a few of his works outside of Catalonia. The building, with its distinctive turrets and neo-Gothic style, now houses a museum dedicated to the building's history, Gaudí, and a collection of art.",
+    "photo": "images/casa-botines.webp"
+  },
+  {
+    "name": "Basílica de San Isidoro",
+    "address": "Plaza de San Isidoro, 4, 24003 León, Spain",
+    "description": "This is a jewel of Romanesque art and a must-see for anyone interested in medieval history. The basilica features the Royal Pantheon, a vaulted chamber with incredible frescoes that have earned it the nickname 'the Sistine Chapel of Romanesque Art.'",
+    "photo": "images/san-isidoro.webp"
+  },
+  {
+    "name": "MUSAC (Museo de Arte Contemporáneo de Castilla y León)",
+    "address": "Av. de los Reyes Leoneses, 24, 24008 León, Spain",
+    "description": "The Museum of Contemporary Art of Castilla y León is an award-winning museum and a significant modern architectural landmark. Its colorful, mosaic-like facade is a work of art in itself, and the museum houses an important collection of contemporary art from the region.",
+    "photo": "images/musac.webp"
+  },
+  {
+    "name": "Convento de San Marcos",
+    "address": "Plaza de San Marcos, 6, 24002 León, Spain",
+    "description": "Originally a 12th-century pilgrim hostel, this impressive building was rebuilt in the 16th century in the Plateresque style. Its ornate facade is a prime example of Spanish Renaissance architecture, and today it operates as a luxury hotel and a national monument.",
+    "photo": "images/convento-san-marcos.webp"
+  },
+  {
+    "name": "Plaza Mayor",
+    "address": "Plaza Mayor, 24003 León, Spain",
+    "description": "The heart of León's historic center, the Plaza Mayor is a classic Spanish main square. Surrounded by two-story arcaded buildings and home to the old town hall, it's a vibrant hub for cafes, bars, and local life, particularly in the evening.",
+    "photo": "images/plaza-mayor.webp"
+  },
+  {
+    "name": "Palacio de los Guzmanes",
+    "address": "Plaza de San Marcelo, 6, 24003 León, Spain",
+    "description": "This beautiful 16th-century Renaissance palace is located right next to Casa Botines. It features an impressive facade and a striking courtyard, and now serves as the headquarters for the provincial government.",
+    "photo": "images/palacio-guzmanes.webp"
+  },
+  {
+    "name": "Barrio Húmedo",
+    "address": "Around Plaza de San Martín, 24003 León, Spain",
+    "description": "León's famous 'Wet Quarter' is the city's most lively area, known for its narrow streets, historic buildings, and incredible tapas scene. It's a fantastic place to wander from bar to bar, enjoying complimentary tapas with your drinks and experiencing the local culture.",
+    "photo": "images/barrio-humedo.webp"
+  }
+]
