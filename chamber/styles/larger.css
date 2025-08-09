@@ -105,4 +105,8 @@
     #discover-gallery {
         grid-template-columns: 1fr 1fr;
     }
+
+    .discover-card figure img:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }
