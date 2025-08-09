@@ -18,7 +18,7 @@ function displayPlaces(placesJson) {
         const sectionHTML = `<section class="discover-card">
                 <h2>${place.name}</h2>
                 <figure>
-                    <img src="${place.photo}" alt="${place.name}">
+                    <img src="${place.photo}" alt="${place.name}" loading="lazy">
                 </figure>
 
                 <address>
