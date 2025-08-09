@@ -509,3 +509,16 @@ dialog {
     grid-area: button;
     margin-top: 1rem;
 }
+
+#discover-sidebar {
+    position: fixed;
+    bottom: 0; /* Positions the element at the bottom of the viewport */
+    left: 0;   /* Aligns the element to the left edge of the viewport */
+    right: 0;  /* Aligns the element to the right edge of the viewport */
+    width: 100%; /* Ensures it spans the entire width */
+    z-index: 1000;
+    background-color: #f1f1f1; /* A light gray background for the ribbon */
+    text-align: center; /* Centers the text within the ribbon */
+    padding: 10px 0; /* Adds some vertical padding */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* A shadow on the top edge */
+}
