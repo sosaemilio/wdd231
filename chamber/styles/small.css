@@ -28,7 +28,8 @@ img {
     height: auto;
 }
 
-h4, h3 {
+h4,
+h3 {
     font-size: 1.2em;
     margin: 0px;
     text-align: center;
@@ -50,8 +51,7 @@ p {
 /* Nav Bar */
 
 .nav-bar {
-    background-color: #8B0000
-;
+    background-color: #8B0000;
     color: white;
     display: flex;
     align-items: center;
@@ -240,8 +240,7 @@ Directory Page
 }
 
 .sortby button {
-    background-color: #8B0000
-;
+    background-color: #8B0000;
     color: white;
     padding: 1rem;
 }
@@ -250,8 +249,7 @@ Directory Page
     text-decoration: underline;
     background-color: white;
     border: none;
-    color: #8B0000
-;
+    color: #8B0000;
 }
 
 /*Hero Image */
@@ -272,8 +270,7 @@ Directory Page
 .hero-text p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
-    background-color: #8B0000
-;
+    background-color: #8B0000;
     width: 300px;
 }
 
@@ -291,8 +288,7 @@ Directory Page
     font-size: 1.5rem;
     color: white;
     margin-bottom: 0.5rem;
-    background-color: #8B0000
-;
+    background-color: #8B0000;
     width: 100%;
 }
 
@@ -306,7 +302,7 @@ Directory Page
 .weather-icon {
     width: 50px;
     margin: 20px;
-} 
+}
 
 .weather-info {
     flex-grow: 2;
@@ -321,13 +317,12 @@ Directory Page
 .business-card {
     display: flex;
     flex-direction: column;
-    background-color: #8B0000
-;
+    background-color: #8B0000;
     color: white;
     padding: 1rem;
     margin: 1rem;
     border-radius: 8px;
-}   
+}
 
 .business-information {
     display: flex;
@@ -384,7 +379,7 @@ Directory Page
 }
 
 #submit {
-    margin:  10px 0;
+    margin: 10px 0;
 }
 
 /* Form/Fields Styles */
@@ -393,14 +388,18 @@ label {
     margin-bottom: 0.5rem;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     margin-bottom: 1rem;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     border-color: #8B0000;
     outline: none;
 }
@@ -408,15 +407,16 @@ input:focus, select:focus, textarea:focus {
 /*Dialog*/
 
 dialog {
-  width: 400px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-  padding: 20px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
 }
+
 ::backdrop {
-  background-color: rgb(0 0 0 / 50%);
+    background-color: rgb(0 0 0 / 50%);
 }
 
 #closeModal {
@@ -424,7 +424,8 @@ dialog {
     color: white;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;}
+    cursor: pointer;
+}
 
 /*Make the .membership cards appears from right to left using animation*/
 
@@ -437,6 +438,7 @@ dialog {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -458,11 +460,13 @@ dialog {
 }
 
 .discover-card {
+    display: grid;
     background-color: #8B0000;
     color: white;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
+    grid-template-areas: "title" "image" "description" "address" "button";
 }
 
 .discover-card img {
