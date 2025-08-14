@@ -182,27 +182,53 @@ footer a {
     margin-top: 1rem;
 }
 
+/* In css/main.css - DELETE the old .favorite-btn styles and REPLACE with this */
+
 .favorite-btn {
     background: none;
-    border: 1px solid #ccc;
+    border: 1px solid var(--terciary-color); /* A subtle brown border */
     border-radius: 5px;
-    font-size: 1.5rem; 
-    line-height: 1;
-    padding: 5px 8px;
+    padding: 5px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: background-color 0.2s ease;
+    /* Flex properties to center the SVG inside the button */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
 }
 
 .favorite-btn:hover {
-    background-color: #f0f0f0;
+    background-color: var(--fourth-color); /* Light background on hover */
 }
 
-
-.favorite-btn.favorited {
-    color: #FFD700; 
-    border-color: #FFD700;
+/* Style for the SVG icons inside the button */
+.favorite-btn svg {
+    width: 24px;  /* Control the size of the icon */
+    height: 24px;
 }
 
+/* --- The Logic for Showing/Hiding Stars --- */
+
+/* By default, hide the solid star */
+.favorite-btn .star-solid {
+    display: none;
+}
+/* and show the outline star */
+.favorite-btn .star-outline {
+    display: block;
+    fill: var(--secondary-color); /* Dark gray fill for the outline */
+}
+
+/* When the button has the .favorited class... */
+.favorite-btn.favorited .star-solid {
+    display: block; /* Show the solid star */
+    fill: var(--primary-color); /* Fill it with your primary gold/orange color */
+}
+
+.favorite-btn.favorited .star-outline {
+    display: none; /* Hide the outline star */
+}
 
 /*Form design -- Plan Your Trip */
 
@@ -335,4 +361,8 @@ dialog::backdrop {
 
 #dialog-form {
     background-color: white;
+}
+
+#copyright {
+    text-align: center;
 }
