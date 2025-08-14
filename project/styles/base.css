@@ -206,7 +206,7 @@ button {
 
 /** HOMEPAGE **/
 .hero-banner {
-    background-image: url('../images/hero-banner.jpeg');
+    background-image: url('../images/hero-banner.webp');
     background-size: cover;
     background-position: center;
     color: var(--fourth-color);
