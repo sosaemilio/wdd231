@@ -1,5 +1,5 @@
-import { fetchParks } from './dataParks.mjs';
-import { displayParks } from './parksBuilders.mjs';
+import { fetchParks } from './parks-data.mjs';
+import { displayParks } from './parks-builder.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
     // This code block runs on all pages. Put shared code here, like nav menu logic.

@@ -10,7 +10,7 @@ export function displayParks(parks, containerElement) {
             <div class="park-card">
                 <img src="${imageUrl}" alt="${imageAlt}" loading="lazy">
                 <div class="card-content">
-                    <h3>${park.fullName}</h3>
+                    <h2>${park.fullName}</h2>
                     <p><strong>Location:</strong> ${park.states}</p>
                     <p>${park.description.substring(0, 100)}...</p> 
                     <button class="modal-btn" data-parkcode="${park.parkCode}">Learn More</button>
