@@ -4,8 +4,8 @@
     --secondary-color: #333333;
     --terciary-color: #a68358;
     --fourth-color: #f0f1e1;
-    --accent2-color: #f07d2e;
-    --accent3-color: #1a4039;
+    --accent1-color: #f07d2e;
+    --accent2-color: #1a4039;
 
     /* change the values below to your chosen font(s) */
     --paragraph-font: 'Lato', sans-serif;
@@ -36,7 +36,6 @@ a {
 }
 
 /** Navigation **/
-
 .logo {
     width: 80px;
 }
@@ -53,14 +52,8 @@ a {
 }
 
 .navigation-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: var(--secondary-color);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
 }
 
 header {
@@ -71,6 +64,11 @@ header {
 .logo-text {
     font-weight: bold;
     color: var(--fourth-color);
+}
+
+.active {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /* Sandwich Menu */
