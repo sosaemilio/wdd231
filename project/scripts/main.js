@@ -1,4 +1,4 @@
-import { fetchParks } from './dataParks.js';
+import { fetchParks } from './dataParks.mjs';
 import { displayParks } from './parksBuilders.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
