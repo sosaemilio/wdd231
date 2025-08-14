@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - National Park Explorer </title>
+    <title>Parks - National Park Explorer </title>
     <meta name="author" content="Emilio Sosa">
     <meta name="description" content="Search parks">
-    <meta property="og:title" content="Find your next adventure. Explore America's national parks with our comprehensive guide, maps, and visitor tips. Your journey into the wild starts here.">
+    <meta property="og:title"
+        content="Find your next adventure. Explore America's national parks with our comprehensive guide, maps, and visitor tips. Your journey into the wild starts here.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://sosaemilio.github.io/wdd231/project/images/header.jpg">
     <meta property="og:url" content="https://sosaemilio.github.io/wdd231/project/index.html">
-    <meta property="og:description" content="Find your next adventure. Explore America's national parks with our comprehensive guide, maps, and visitor tips. Your journey into the wild starts here.">
+    <meta property="og:description"
+        content="Find your next adventure. Explore America's national parks with our comprehensive guide, maps, and visitor tips. Your journey into the wild starts here.">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" def></script>
 </head>
+
 <body>
     <header>
-        <span>
-            <img class="logo" src="images/logo.png">
-        </span>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="plan.html">Plan Your visit</a>
-            <a href="parks.html">Learn & Explore</a>
+        <div class="navigation-container">
+            <span class="logo-container">
+                <img class="logo" src="images/logo.png" alt="National Park Logo">
+                <span class="logo-text">National Park Explorer</span>
+            </span>
+            <div id="menu" class="menu" onclick="menu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav class="navigation-menu">
+            <ul>
+                <li class="navigation-link"><a class="active" href="index.html">Home</a></li>
+                <li class="navigation-link"><a href="parks.html">Learn & Explore</a></li>
+                <li class="navigation-link"><a href="plan.html">Plan Your visit</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is the homepage for Emilio Sosa's WDD231 course.</p>
-        </section>
+        <h1>Explore the Parks</h1>
+        <p>Discover the natural wonders of the U.S. National Parks.</p>
+        <section id="parks-grid" class="parks-grid-container"></section>
     </main>
     <footer>
-
         <div id="copyright">
 
         </div>
-    
     </footer>
 </body>

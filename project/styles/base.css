@@ -8,11 +8,23 @@
     --accent2-color: #1a4039;
 
     /* change the values below to your chosen font(s) */
+    --heading-font: 'Oswald', sans-serif;
     --paragraph-font: 'Lato', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    margin: 0;
 }
 
 body {
@@ -23,6 +35,10 @@ body {
     line-height: 1.8;
     letter-spacing: 0.01rem;
     color: var(--secondary-color);
+}
+
+main {
+    padding: 10px;
 }
 
 img {
@@ -52,7 +68,7 @@ a {
 }
 
 .navigation-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -97,4 +113,34 @@ header {
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+}
+
+/** Footer **/
+footer {
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+    text-align: left;
+}
+
+footer .logo-container {
+    padding: 10px;
+}
+
+footer #copyright {
+    background-color: var(--accent2-color);
+}
+
+footer p {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    padding: 0px 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+footer a {
+    color: var(--fourth-color);
 }
