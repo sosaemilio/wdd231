@@ -37,4 +37,37 @@
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
     }
+
+    /** HERO BANNER **/
+    /** Make banner full size **/
+    .hero-banner {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--fourth-color);
+    }
+
+    .hero-banner h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: var(--fourth-color);
+    }
+
+    .explore-button {
+        border-color: white;
+        border: 1px solid white;
+        color: var(--fourth-color);
+        padding: 12px 24px;
+        border-radius: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .explore-button:hover {
+        background-color: var(--accent1-color);
+        border: 1px solid var(--accent1-color);
+    }
 }

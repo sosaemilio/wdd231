@@ -28,10 +28,11 @@
         rel="stylesheet">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/homepage.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header class="homepage-header">
         <div class="navigation-container">
             <span class="logo-container">
                 <img class="logo" src="images/logo.png" alt="National Park Logo">
@@ -45,17 +46,21 @@
         </div>
         <nav class="navigation-menu">
             <ul>
-                <li class="navigation-link"><a class="active" href="index.html">Home</a></li>
-                <li class="navigation-link"><a href="parks.html">Learn & Explore</a></li>
-                <li class="navigation-link"><a href="plan.html">Plan Your Visit</a></li>
+                <li class="navigation-link homepage-link"><a class="active" href="index.html">Home</a></li>
+                <li class="navigation-link homepage-link"><a href="parks.html">Learn & Explore</a></li>
+                <li class="navigation-link homepage-link"><a href="plan.html">Plan Your Visit</a></li>
             </ul>
         </nav>
     </header>
-
+    <!--Hero Banner that fits the whole intro screen-->
+    <section class="hero-banner">
+        <h1>Welcome to the National Park Explorer</h1>
+        <p>Your adventure into the wild starts here.</p>
+        <a href="parks.html" class="explore-button">Explore Parks</a>
+    </section>
     <main>
-        <h1>Explore the Parks</h1>
-        <p>Discover the natural wonders of the U.S. National Parks.</p>
-        <section id="parks-grid" class="parks-grid-container"></section>
+
+
     </main>
     <footer>
         <div class="footer-container">

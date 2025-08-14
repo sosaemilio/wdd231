@@ -5,6 +5,10 @@ function menuToggle(x) {
 /* Set the width of the side navigation to 250px */
 function openNav(x) {
     document.querySelector(".navigation-menu").style.display = "flex";
+    // If website is the homepage applies color
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        document.querySelector("header").style.backgroundColor = "var(--secondary-color)";
+    }
     menuToggle(x)
 }
 

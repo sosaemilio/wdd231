@@ -51,6 +51,16 @@ a {
     text-decoration: none;
 }
 
+/** Remove UL and LI icons **/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
 /** Navigation **/
 .logo {
     width: 80px;
@@ -192,4 +202,60 @@ button {
     border-radius: 10px;
     padding: 10px 15px;
     cursor: pointer;
+}
+
+/** HOMEPAGE **/
+.hero-banner {
+    background-image: url('../images/hero-banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: var(--fourth-color);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--fourth-color);
+}
+
+.explore-button {
+    border-color: white;
+    border: 1px solid white;
+    color: var(--fourth-color);
+    padding: 12px 24px;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.explore-button:hover {
+    background-color: var(--accent1-color);
+    border: 1px solid var(--accent1-color);
+}
+
+.homepage-header {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+}
+
+.navigation-link a {
+    color: var(--fourth-color);
+}
+
+.navigation-link a.active {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/** When scrolling change header color **/
+.homepage-header.scrolled {
+    background-color: var(--secondary-color);
+}
+
+/* This is the new class that will be added by JavaScript */
+.scrolled {
+    background-color: var(--secondary-color);
 }
