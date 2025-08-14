@@ -27,7 +27,7 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" def></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
@@ -52,10 +52,21 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Explore the Parks</h1>
-        <p>Discover the natural wonders of the U.S. National Parks.</p>
-        <section id="parks-grid" class="parks-grid-container"></section>
+    <main class="plan-structure">
+        <h1>Plan your Trip</h1>
+        <!--Form to retrieve name, email and purpose of the trip-->
+        <form id="trip-planning-form" action="thankyou.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="purpose">Purpose of Trip:</label>
+            <textarea id="purpose" name="purpose" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </main>
     <footer>
         <div class="footer-container">
