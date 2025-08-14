@@ -250,12 +250,61 @@ button {
     text-decoration: underline;
 }
 
-/** When scrolling change header color **/
+
 .homepage-header.scrolled {
     background-color: var(--secondary-color);
 }
 
-/* This is the new class that will be added by JavaScript */
 .scrolled {
     background-color: var(--secondary-color);
+}
+
+/** MODAL DIALOG **/
+/* In css/main.css - Replace the old modal styles with these */
+
+dialog {
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* This is the built-in, semi-transparent background */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-content {
+    position: relative;
+}
+
+.dialog-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.dialog-close-btn {
+    color: #aaa;
+    position: absolute;
+    top: -10px; /* Position relative to the parent .dialog-content */
+    right: 0px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.dialog-close-btn:hover,
+.dialog-close-btn:focus {
+    color: black;
+}
+
+#dialog-form {
+    background-color: white;
 }
