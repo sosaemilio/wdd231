@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // You can add a listener to close the dialog if the user clicks the backdrop.
-    // This is optional as the Escape key already works by default.
     if (dialog) {
         dialog.addEventListener("click", e => {
             const dialogDimensions = dialog.getBoundingClientRect()

@@ -1,4 +1,3 @@
-// In js/data-manager.js
 const API_KEY = 'qO0pMRhIptQ64GbO8bTuxzUAg96gVP4qaMW15B9L'; // Paste your key here
 const API_URL = `https://developer.nps.gov/api/v1/parks?limit=20&api_key=${API_KEY}`;
 
