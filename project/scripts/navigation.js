@@ -6,7 +6,7 @@ function menuToggle(x) {
 function openNav(x) {
     document.querySelector(".navigation-menu").style.display = "flex";
     // If website is the homepage applies color
-    if (window.location.pathname === '/wdd231/project/index.html' || window.location.pathname === '/index.html') {
+    if (window.location.pathname === '/wdd231/project/index.html' || window.location.pathname === '/wdd231/project/' || window.location.pathname === '/project/' || window.location.pathname === '/project/index.html') {
         document.querySelector("header").style.backgroundColor = "var(--secondary-color)";
     }
     menuToggle(x)
