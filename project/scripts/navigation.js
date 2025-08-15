@@ -15,6 +15,9 @@ function openNav(x) {
 /* Set the width of the side navigation to 0 */
 function closeNav(x) {
     document.querySelector(".navigation-menu").style.display = "none";
+    if (window.location.pathname === '/wdd231/project/index.html' || window.location.pathname === '/wdd231/project/' || window.location.pathname === '/project/' || window.location.pathname === '/project/index.html') {
+        document.querySelector("header").style.backgroundColor = "transparent";
+    }
     menuToggle(x);
 }
 
