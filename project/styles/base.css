@@ -101,6 +101,7 @@ header {
 .menu {
     display: inline-block;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 .bar1,
